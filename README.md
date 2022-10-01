@@ -1,10 +1,5 @@
-# @cloak-app/sandbox
+# CSS Animation Viewport Builds Demo
 
-A simplified Cloak app for demos and experiments.
+Using CSS animations to animate builds pre-JS init for components in the initial viewport.  And using IntersectionObserver to trigger animations in components that begin below the fold.
 
-- [View demo](https://cloak-sandbox.netlify.app)
-- [Edit CodeSandbox](https://githubbox.com/BKWLD/cloak-sandbox)
-
-## Contributing
-
-Run `yarn dev` to open a Nuxt dev build of [the demo directory](./demo).
+![https://css-animation-viewport-buildins-demo.netlify.app](https://css-animation-viewport-buildins-demo.netlify.app)
