@@ -1,0 +1,23 @@
+{
+  "name": "ssr-friendly-viewport-buildins",
+  "version": "0.0.1",
+  "description": "",
+  "repository": "git@github.com:BKWLD/cloak-sandbox.git",
+  "author": "Bukwild <info@bukwild.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate --fail-on-error --target=static"
+  },
+  "devDependencies": {
+    "@cloak-app/boilerplate": "^1.0.3",
+    "@cloak-app/demo-theme": "^1.0.1",
+    "nuxt": "^2.15.7"
+  },
+  "keywords": [],
+  "dependencies": {
+    "lorem-ipsum": "2.0.8"
+  }
+}
