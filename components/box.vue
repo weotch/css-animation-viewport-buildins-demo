@@ -1,6 +1,6 @@
 <!-- A box that watches for being in viewport -->
 
-<template lang='pug'>
+<template lang="pug">
 
 .box: div
 	h1: span Box {{ index }}
@@ -10,7 +10,7 @@
 
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<script lang='coffee'>
+<script lang="coffee">
 import { LoremIpsum } from "lorem-ipsum"
 export default
 
@@ -32,7 +32,7 @@ export default
 		isBelowViewport: -> @$el.offsetTop > window.innerHeight
 
 		# Restart all of the animations inside the container
-		resetAnimations: -> 
+		resetAnimations: ->
 			for animation in @$el.getAnimations subtree: true
 				animation.pause()
 				animation.currentTime = 0
@@ -49,12 +49,11 @@ export default
 		playAnimations: ->
 			for animation in @$el.getAnimations subtree: true
 				animation.play()
-
 </script>
 
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<style lang='stylus' scoped>
+<style lang="stylus" scoped>
 
 // Make box shape
 .box
@@ -79,9 +78,6 @@ h1 span
 		from
 			opacity 0
 			transform scale(1.5) translateY(10px)
-		to
-			opacity 1
-			transform scale(1) translateY(0)
 	animation h1-intro 1s ease-out-quint both
 
 // Slide up the description
@@ -91,10 +87,5 @@ p
 		from
 			opacity 0
 			transform translateY(10px)
-		to
-			opacity 1
-			transform translateY(0)
 	animation p-intro 1s .5s ease-out both
-	
-
 </style>
